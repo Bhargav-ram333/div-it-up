@@ -7,34 +7,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <h1>Typing Game!</h1>
-  <p>Practice your typing skills with a quote from Sherlock Holmes. Click <b>Start</b> to begin!</p>
+  <p>Practice your typing skills with a quote from Sherlock Holmes. Click <strong>Start</strong> to begin!</p>
   
-  <!-- Display area -->
-  <p id="quote"></p> <!-- Shows the quote -->
-  <p id="message"></p> <!-- Status messages -->
-  
+  <p id="quote"></p> <!-- This will display the quote -->
+  <p id="message"></p> <!-- This will display status messages -->
+
   <div>
-    <input type="text" aria-label="current word" id="typed-value" disabled /> <!-- Textbox (disabled initially) -->
-    <button type="button" id="start">Start</button> <!-- Start button -->
+    <input type="text" id="typed-value" disabled />
+    <button id="start">Start</button>
   </div>
 
-  <!-- Game stats -->
-  <p id="timer">Time: 0s</p>
-  <p id="high-score"></p>
+  <p id="high-score">Best Time: --</p> <!-- Display high score -->
 
-  <!-- Success Modal -->
-  <div id="successModal" class="modal">
+  <!-- Modal Dialog -->
+  <div id="modal" class="modal">
     <div class="modal-content">
-      <span class="close">&times;</span>
-      <h3>Congratulations!</h3>
-      <p>You completed the quote successfully!</p>
-      <p id="finalTime"></p>
-      <p id="bestScoreMsg"></p>
-      <button id="playAgainBtn">Play Again</button>
+      <p id="modal-message"></p>
+      <button id="close-modal">OK</button>
     </div>
   </div>
 
   <script src="script.js"></script>
+
 </body>
 </html>
