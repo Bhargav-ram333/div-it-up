@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Typing Game!</h1>
+  <p>Practice your typing skills with a quote from Sherlock Holmes. Click <b>Start</b> to begin!</p>
+  
+  <!-- Display area -->
+  <p id="quote"></p> <!-- Shows the quote -->
+  <p id="message"></p> <!-- Status messages -->
+  
+  <div>
+    <input type="text" aria-label="current word" id="typed-value" disabled /> <!-- Textbox (disabled initially) -->
+    <button type="button" id="start">Start</button> <!-- Start button -->
+  </div>
+
+  <!-- Game stats -->
+  <p id="timer">Time: 0s</p>
+  <p id="high-score"></p>
+
+  <!-- Success Modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Congratulations!</h3>
+      <p>You completed the quote successfully!</p>
+      <p id="finalTime"></p>
+      <p id="bestScoreMsg"></p>
+      <button id="playAgainBtn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
